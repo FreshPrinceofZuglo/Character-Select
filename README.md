@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+-------------------------------------------------------
+Rick and Morty Character Information Panel - README
+-------------------------------------------------------
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---------------
+Features
+---------------
 
-Currently, two official plugins are available:
+Browse all characters to see information about them, such as how they look, their names and their status.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Click any name to see a detailed profile/character page with origin, location, gender and count of episodes in which they appeared.
 
-## React Compiler
+Search for any character by name.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Paginated through 42 pages of characters, 20 per page.
 
-## Expanding the ESLint configuration
+Shareable URL-s, even with search results.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---------------
+How to start
+---------------
+Prerequisites: Node.js 20 or newer, and npm (comes with Node).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Clone the repo:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+git clone https://github.com/FreshPrinceofZuglo/Rick-and-Morty-Character-Information-Panel-Character-Select-.git
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. Move into the project folder:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+cd Character Select
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. Install npm from the terminal:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+npm install
+
+4. Start the dev server:
+
+npm run dev
+
+5. Then open the link that the terminal returns:
+
+http://localhost:5173
+
+
+---------------
+Stack used
+---------------
+
+Built in React with typescript, using Vite as the build tool and React Router for client-side routing, with CSS modules for niceties.
+
+Rick & Morty API as data source.
+
+---------------
+Project Structure
+---------------
+--src/App.tsx
+--src/pages/Home.tsx
+--src/pages/Home.module.css
+--src/pages/Character.tsx
+--src/pages/Character.module.css
+--src/types/character.ts
