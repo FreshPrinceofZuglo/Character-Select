@@ -23,7 +23,7 @@ Prerequisites: Node.js 20 or newer, and npm (comes with Node).
 
 1. Clone the repo:
 
-git clone https://github.com/FreshPrinceofZuglo/Rick-and-Morty-Character-Information-Panel-Character-Select-.git
+git clone https://github.com/FreshPrinceofZuglo/Character-Select.git
 
 2. Move into the project folder:
 
