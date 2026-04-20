@@ -14,7 +14,7 @@ Search for any character by name.
 
 Paginated through 42 pages of characters, 20 per page.
 
-Shareable URL-s, even with search results.
+Shareable URL-s, even with search queries.
 
 ---------------
 How to start
@@ -27,7 +27,7 @@ git clone https://github.com/FreshPrinceofZuglo/Character-Select.git
 
 2. Move into the project folder:
 
-cd Character Select
+cd Character-Select
 
 3. Install npm from the terminal:
 
