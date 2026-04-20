@@ -1,0 +1,136 @@
+.backButton {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.9rem 0.5rem 0.75rem;
+  border-radius: var(--radius-md);
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.12s;
+}
+
+.backButton:hover {
+  background: var(--surface-hover);
+  border-color: var(--border-strong);
+}
+
+.backButton:active {
+  transform: translateY(1px);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  box-shadow: var(--shadow-sm);
+}
+
+.image {
+  width: 220px;
+  height: 220px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--bg);
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.25rem;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  margin: 0 0 1.75rem;
+  font-size: 0.9rem;
+}
+
+.details {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.details td {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+}
+
+.details tr:last-child td {
+  border-bottom: none;
+}
+
+.detailLabel {
+  color: var(--text-muted);
+  width: 140px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.statusBadge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.statusAlive {
+  background: var(--success-bg);
+  color: var(--success-text);
+}
+
+.statusDead {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+}
+
+.statusUnknown {
+  background: var(--neutral-bg);
+  color: var(--neutral-text);
+}
+
+.state {
+  padding: 2.5rem 1rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.25rem;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+}
